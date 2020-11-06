@@ -133,9 +133,9 @@ def test_item_parse_with_name_value_pair():
 def test_gen():
     # fake_file = io.StringIO("some initial text data")
     # with mock.patch('os.open', return_value=fake_file, create=True):
-    result_config = Config("./tests/resources/test.conf")
+    result_config = Config("./test/resources/test.conf")
     assert result_config.categories[0].line == '[dummytext]'
-    assert result_config.filename == './tests/resources/test.conf'
+    assert result_config.filename == './test/resources/test.conf'
     assert len(result_config.lines) == 6
     # self.assertEqual(result, ['<foo\n>', '<bar\n>'])
 

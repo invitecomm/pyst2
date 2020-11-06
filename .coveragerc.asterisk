@@ -2,7 +2,7 @@
 [run]
 branch = True
 data_file = .coverage.asterisk
-source = /home/ec2-user/pyst2
+source = /home/ec2-user/pyst2/asterisk
 
 [report]
 # Regexes for lines to exclude from consideration

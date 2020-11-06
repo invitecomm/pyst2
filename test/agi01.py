@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 # vim: set et sw=4 fenc=utf-8:
 
-import coverage
+#import coverage
 
-cov = coverage.Coverage(config_file='/home/ec2-user/pyst2/.coveragerc.asterisk')
-cov.start()
+#cov = coverage.Coverage(config_file='/home/ec2-user/pyst2/.coveragerc.asterisk')
+#cov.start()
 
 from asterisk.agi import *
 
@@ -22,7 +22,7 @@ agi.set_variable('AGI_RECORD', '234209384092384')
 agi.verbose('This is a test!')
 #agi.verbose(data)
 
-#agi.hangup()
+agi.hangup()
 
 
 #manager = asterisk.manager.Manager()
@@ -34,6 +34,6 @@ agi.verbose('This is a test!')
 #print(response)
 #print manager.status()
 
-cov.stop()
-foo = cov.save()
-print(foo)
+#cov.stop()
+#foo = cov.save()
+#print(foo)
